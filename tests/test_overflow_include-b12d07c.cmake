@@ -1,0 +1,5 @@
+if(EXISTS "/home/mhecko/school/research/implementations/acns-vibe/tests/test_overflow_tests-b12d07c.cmake")
+  include("/home/mhecko/school/research/implementations/acns-vibe/tests/test_overflow_tests-b12d07c.cmake")
+else()
+  add_test(test_overflow_NOT_BUILT-b12d07c test_overflow_NOT_BUILT-b12d07c)
+endif()

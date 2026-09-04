@@ -1,0 +1,5 @@
+if(EXISTS "/home/mhecko/school/research/implementations/acns-vibe/tests/test_divide_tests-b12d07c.cmake")
+  include("/home/mhecko/school/research/implementations/acns-vibe/tests/test_divide_tests-b12d07c.cmake")
+else()
+  add_test(test_divide_NOT_BUILT-b12d07c test_divide_NOT_BUILT-b12d07c)
+endif()

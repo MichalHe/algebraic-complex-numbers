@@ -1,0 +1,27 @@
+# Minimal Doxyfile -- unset options take Doxygen's built-in defaults.
+# Run: doxygen Doxyfile   (output in docs/api/, gitignored)
+
+PROJECT_NAME           = "acn"
+PROJECT_BRIEF          = "Exact arithmetic in Z[sqrt2][i]/sqrt2^k for quantum circuit verification"
+OUTPUT_DIRECTORY       = docs/api
+
+INPUT                  = include/acn docs/DESIGN.md
+USE_MDFILE_AS_MAINPAGE = docs/DESIGN.md
+RECURSIVE              = YES
+FILE_PATTERNS          = *.hpp
+
+EXTRACT_ALL            = YES
+EXTRACT_STATIC         = YES
+EXTRACT_PRIVATE        = NO
+JAVADOC_AUTOBRIEF      = YES
+QT_AUTOBRIEF           = YES
+
+GENERATE_LATEX         = NO
+GENERATE_HTML          = YES
+GENERATE_TREEVIEW      = YES
+
+QUIET                  = YES
+WARN_IF_UNDOCUMENTED   = YES
+WARN_LOGFILE           = docs/api/doxygen-warnings.log
+
+SOURCE_BROWSER         = YES

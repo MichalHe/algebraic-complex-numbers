@@ -192,7 +192,7 @@ concept AlgebraicComplex = requires (T a, T b, T& d, int j) {
     { a == b }      -> std::same_as<bool>;
     { a.conj() }    -> std::same_as<T>;
     { a.mul_omega(j) } -> std::same_as<T>;      // rotation
-    { a.scale(j) }     -> std::same_as<T>;      // multiply by sqrt(2)^-j
+    { a.scale(j) }     -> std::same_as<T>;      // multiply by sqrt(2)^j
     { canonicalize(d) };
     { hash_value(a) } -> std::same_as<u64>;
     { a.to_complex() } -> std::same_as<std::complex<double>>;

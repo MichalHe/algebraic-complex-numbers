@@ -328,7 +328,7 @@ public:
         return result;
     }
 
-    /// Multiplies by sqrt(2)^(-d); d may be negative.
+    /// Multiplies by sqrt(2)^d; d may be negative.
     AcnDyn scale(ScaleExp d) const {
         AcnDyn result = *this;
         result.k_ = static_cast<ScaleExp>(result.k_ - d);

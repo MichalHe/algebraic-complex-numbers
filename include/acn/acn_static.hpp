@@ -249,8 +249,8 @@ public:
         return result;
     }
 
-    /// Multiplies by sqrt(2)^(-d); d may be negative.
-    // Multiply by sqrt(2)^(-d): k -= d, then canonicalize. d may be negative.
+    /// Multiplies by sqrt(2)^d; d may be negative.
+    // Multiply by sqrt(2)^d: k -= d, then canonicalize. d may be negative.
     Acn scale(ScaleExp d) const {
         Acn result = *this;
         result.k_ = static_cast<ScaleExp>(result.k_ - d);
